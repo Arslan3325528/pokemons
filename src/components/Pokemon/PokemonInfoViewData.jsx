@@ -20,4 +20,3 @@ export function PokemonInfoViewData({ pokemon: { name, sprites, stats } }) {
     </div>
   );
 };
-

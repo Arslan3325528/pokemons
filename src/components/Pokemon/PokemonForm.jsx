@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import { ImSearch } from 'react-icons/im';
+
 // https://www.npmjs.com/package/react-toasti
 // https://fkhadra.github.io/react-toastify/introduction/
 import { toast } from 'react-toastify'; //! 02.Підлючення/виклик бібліотеки react-toastify
@@ -77,4 +78,3 @@ export class PokemonForm extends Component {
         );
     }
 };
-

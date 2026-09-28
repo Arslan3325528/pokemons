@@ -1,28 +1,15 @@
 import { Component } from 'react';
 
 import { PokemonInfoViewСontainer } from './PokemonInfoViewСontainer.jsx';
-import { PokemonInfoViewPending } from './PokemonInfoViewPending.jsx';
-import { PokemonInfoViewPendingLoaders } from './PokemonInfoViewPendingLoaders.jsx'; //! + бібліотеки з Loaders (спінерами)
+import { PokemonInfoViewPending } from './PokemonInfoViewPending.jsx'; //! + бібліотеки з Loaders (спінерами)
 import { PokemonInfoViewError } from './PokemonInfoViewError.jsx';
 import { PokemonInfoViewData } from './PokemonInfoViewData.jsx';
-// import pokemonAPI from '../../services/pokemon-api.js';
 import  pokemonAPI from '@/services/pokemon-api.js'; 
 
 // import css from "./PokemonInfo.module.css";
 
-//? Застосуємо такі статуси:
-//?     - idle - запиту ще немає, нічого не відбувається
-//?     - pending - пішов запит
-//?     - rejected - відповідь на запит з помилкою
-//?     - resolved - успішна відповідь на запит
 
-//* Плюси використання паттерна State Machine:
-//*     - Зникають проблеми скидання полів «щоб працювало».
-//*     - Не слід стежити за значеннями N полів. 
-//*     - Зрозуміліші умови рендеру розмітки.
-
-
-export class PokemonInfoAndErrorsStateMachine23 extends Component {
+export class PokemonInfoAndErrorsStateMachine extends Component {
   state = {
     pokemon: null, //! об'єкт з даними про покемона
     error: null, //! обробка помилок
@@ -96,9 +83,8 @@ export class PokemonInfoAndErrorsStateMachine23 extends Component {
     if (status === 'pending') {
       return (
         <PokemonInfoViewСontainer title="Pokemon Info">
-          {/* <PokemonInfoViewPending pokemonName={pokemonName} /> */}
           {/* //! + Бібліотеки з Loaders (спінерами) */}
-          <PokemonInfoViewPendingLoaders pokemonName={pokemonName} />
+          <PokemonInfoViewPending pokemonName={pokemonName} />
         </PokemonInfoViewСontainer>
       );
     };
