@@ -3,11 +3,13 @@ body {
 }
 
 .mainContainer {
-    max-width: 800px;
+    /* max-width: 800px; */
+    /* max-width: 90vw; */
     margin: 0 auto;
     display: grid;
     justify-content: center;
-    padding: 20px;
+    /* padding: 20px; */
+    padding: 20px 0;
     text-align: center;
     color: #510019;
     /* outline: 2px solid red; */

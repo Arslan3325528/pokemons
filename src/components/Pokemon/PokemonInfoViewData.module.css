@@ -5,8 +5,13 @@
 
 .pokemonName {
     font-size: x-large;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
+
+/* .pokemonImage {
+    max-width: fit-content;
+    min-width: max-content;
+} */
 
 .pokemonStats {
     display: grid;

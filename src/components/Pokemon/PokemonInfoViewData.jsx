@@ -10,7 +10,7 @@ export function PokemonInfoViewData({
   return (
     <div className={css.pokemonContainer}>
       <p className={css.pokemonName}><u><i>Покемон</i></u>: <b>{name}</b></p>
-      <img
+      <img className={css.pokemonImage}
         src={sprites.other.home?.front_default} //todo: var.2
         // src={sprites.other['official-artwork'].front_default} //todo: var.3
         alt={name}
