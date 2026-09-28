@@ -1,22 +1,6 @@
 import axios from "axios";
 
 
-//todo: old (fetch)
-// function fetchPokemon(name) {
-//   return fetch(`https://pokeapi.co/api/v2/pokemon/${name}`)
-//     .then(response => {
-//       if (response.ok) {
-//         return response.json();
-//       };
-//       return Promise.reject(new Error(`Покемена з ім'ям «${name}» не існує`))
-//     });
-// };
-
-
-//? Axios сам вважає помилкою HTTP-відповіді з кодами поза 2xx.
-//? Тому ручна перевірка response.ok та Promise.reject(...) більше не потрібні.
-//? Axios автоматично поміщає JSON-відповідь у response.data.
-
 //* NEW-1 (axios)
 // function fetchPokemon(name) {
 //   return axios

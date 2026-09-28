@@ -16,40 +16,47 @@ export function PokemonInfoViewPending({ pokemonName }) {
   const pokemonSkeleton = {
     name: pokemonName,
     sprites: {
+      //todo: var.2
       other: {
-        'official-artwork': {
+        home: {
           front_default: pendingImage,
         },
       },
+      //todo: var.3
+      // other: {
+      //   'official-artwork': {
+      //     front_default: pendingImage,
+      //   },
+      // },
     },
     //! Додатковий список властивостей покемона
     // stats: [],
-    stats: [
-      {
-        stat: { name: "hp" },
-        base_stat: "⏳"
-      },
-      {
-        stat: { name: "attack" },
-        base_stat: "⏳"
-      },
-      {
-        stat: { name: "defense" },
-        base_stat: "⏳"
-      },
-      {
-        stat: { name: "special-attack" },
-        base_stat: "⏳"
-      },
-      {
-        stat: { name: "special-defense" },
-        base_stat: "⏳"
-      },
-      {
-        stat: { name: "speed" },
-        base_stat: "⏳"
-      }
-    ],
+    // stats: [
+    //   {
+    //     stat: { name: "hp" },
+    //     base_stat: "⏳"
+    //   },
+    //   {
+    //     stat: { name: "attack" },
+    //     base_stat: "⏳"
+    //   },
+    //   {
+    //     stat: { name: "defense" },
+    //     base_stat: "⏳"
+    //   },
+    //   {
+    //     stat: { name: "special-attack" },
+    //     base_stat: "⏳"
+    //   },
+    //   {
+    //     stat: { name: "special-defense" },
+    //     base_stat: "⏳"
+    //   },
+    //   {
+    //     stat: { name: "speed" },
+    //     base_stat: "⏳"
+    //   }
+    // ],
   };
 
   return (
