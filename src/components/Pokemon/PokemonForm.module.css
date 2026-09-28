@@ -11,6 +11,10 @@
 
 .pokemonFormInput {
     max-width: 70%;
+    height: 30px;
+    border: 2px double green;
+    border-radius: 4px;
+    font-size: larger;
 }
 
 .pokemonButton {
