@@ -61,26 +61,26 @@ export function PokemonInfoViewPending({ pokemonName }) {
 
   return (
     <div role="alert">
-      <h2><u><i>Ви ввели ім'я покемона</i></u>: <b>{pokemonName}</b></h2>
+      {/* <h2><u><i>Ви ввели ім'я покемона</i></u>: <b>{pokemonName}</b></h2> */}
       <div className={css.spinnerBox}>
         {/* //! Loader-іконка */}
         {/* <ImSpinner size="36" className={css.iconSpin} />  */}
         {/* //! Loader: бібліотека react-spinners */}
-        <ClipLoader
+        {/* <ClipLoader
           size={36}
           color="#09caff"
           aria-label="Завантаження покемона"
-        />
+        /> */}
         {/* <MoonLoader
           size={26}
           color="#ff5119"
           aria-label="Завантаження покемона"
         /> */}
-        <RingLoader
+        {/* <RingLoader
           size={26}
           color="#51ff00"
           aria-label="Завантаження покемона"
-        />
+        /> */}
         {/* //! Loader: бібліотека react-loader-spinner */}
         <Oval
           height={36}
@@ -101,11 +101,11 @@ export function PokemonInfoViewPending({ pokemonName }) {
           visible={true}
         />
         {/* //! Loader: бібліотека ldrs */}
-        <Ring
+        {/* <Ring
           size={36}
           speed={1.5}
           bgOpacity={0.25}
-        />
+        /> */}
         <h2 className={css.pokemonInfoLoading}>Завантажуємо покемон...</h2>
       </div>
       {/* //! React-skeleton (шаблон) */}

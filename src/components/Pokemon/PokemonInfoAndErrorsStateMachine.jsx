@@ -47,7 +47,7 @@ export class PokemonInfoAndErrorsStateMachine extends Component {
               error,
               status: 'rejected' //! статус: rejected - відповідь на запит з ПОМИЛКОЮ
             }));
-      }, 3000);
+      }, 2000);
     };
   };
 
@@ -63,6 +63,10 @@ export class PokemonInfoAndErrorsStateMachine extends Component {
       status, //! статус
     } = this.state;
 
+    // const pokemonTitle = "Pokemon Info";
+    // const pokemonTitle = "Знайди свого Покемона";
+    const pokemonTitle = "";
+
     console.log("----------------------------------------------");
     console.log("ℹ️props-> 🐷 Покемон-ім'я:", pokemonName);
     console.log("ℹ️{🐷} Покемон-об'єкт:", pokemon);
@@ -73,8 +77,9 @@ export class PokemonInfoAndErrorsStateMachine extends Component {
     //? idle - запиту ще немає, нічого не відбувається
     if (status === 'idle') {
       return (
-        <PokemonInfoViewСontainer title="Pokemon Info">
+        <PokemonInfoViewСontainer title={pokemonTitle}>
           <h2><i>Введіть ім'я покемона</i></h2>
+          <h3><i>або число від 1 до 1025</i></h3>
         </PokemonInfoViewСontainer>
       );
     };
@@ -82,7 +87,7 @@ export class PokemonInfoAndErrorsStateMachine extends Component {
     //? pending - пішов запит
     if (status === 'pending') {
       return (
-        <PokemonInfoViewСontainer title="Pokemon Info">
+        <PokemonInfoViewСontainer title={pokemonTitle}>
           {/* //! + Бібліотеки з Loaders (спінерами) */}
           <PokemonInfoViewPending pokemonName={pokemonName} />
         </PokemonInfoViewСontainer>
@@ -92,7 +97,7 @@ export class PokemonInfoAndErrorsStateMachine extends Component {
     //? rejected - відповідь на запит з помилкою
     if (status === 'rejected') {
       return (
-        <PokemonInfoViewСontainer title="Pokemon Info">
+        <PokemonInfoViewСontainer title={pokemonTitle}>
           <PokemonInfoViewError errorMessage={error.message} />
         </PokemonInfoViewСontainer>
       );
@@ -101,7 +106,7 @@ export class PokemonInfoAndErrorsStateMachine extends Component {
     //? resolved - успішна відповідь на запит
     if (status === 'resolved') {
       return (
-        <PokemonInfoViewСontainer title="Pokemon Info">
+        <PokemonInfoViewСontainer title={pokemonTitle}>
           <PokemonInfoViewData pokemon={pokemon} />
         </PokemonInfoViewСontainer>
       );

@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    outline: 2px solid green;
+    /* outline: 2px solid green; */
 }
 
 .pokemonFormInput {

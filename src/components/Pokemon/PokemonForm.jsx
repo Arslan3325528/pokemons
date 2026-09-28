@@ -25,9 +25,9 @@ export class PokemonForm extends Component {
 
         //! Перевірка на пустий інпут
         if (this.state.pokemonName.trim() === "") {
-            alert("Введіть ім'я покемона");
+            // alert("Введіть ім'я покемона");
             // toast("Введіть ім'я покемона"); //! 02.Підлючення/виклик бібліотеки react-toastify
-            toast.error("Введіть ім'я покемона"); //! 02.Підлючення/виклик бібліотеки react-toastify
+            toast.error("Введіть ім'я покемона або число від 1 до 1025"); //! 02.Підлючення/виклик бібліотеки react-toastify
             return;
         };
 
