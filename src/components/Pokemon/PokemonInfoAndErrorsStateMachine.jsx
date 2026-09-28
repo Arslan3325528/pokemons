@@ -21,9 +21,9 @@ export class PokemonInfoAndErrorsStateMachine extends Component {
     const nextName = this.props.pokemonName; //! ім'я покемона (оновлене)
 
     if (prevName !== nextName) {
-      console.log("❗️Змінилося ім'я ПОКЕМОНА");
-      console.log("⏮️prevName (prevProps.pokemonName): ", prevProps.pokemonName);
-      console.log("⏭️nextName (this.props.pokemonName): ", this.props.pokemonName);
+      // console.log("❗️Змінилося ім'я ПОКЕМОНА");
+      // console.log("⏮️prevName (prevProps.pokemonName): ", prevProps.pokemonName);
+      // console.log("⏭️nextName (this.props.pokemonName): ", this.props.pokemonName);
 
       this.setState({
         pokemon: null, //! прибираємо попереднього покемона при завантаженні наступного
@@ -67,12 +67,12 @@ export class PokemonInfoAndErrorsStateMachine extends Component {
     // const pokemonTitle = "Знайди свого Покемона";
     const pokemonTitle = "";
 
-    console.log("----------------------------------------------");
-    console.log("ℹ️props-> 🐷 Покемон-ім'я:", pokemonName);
-    console.log("ℹ️{🐷} Покемон-об'єкт:", pokemon);
-    console.log("ℹ️❌ Помилка:", error);
-    console.log("ℹ️❓ Статус:", status);
-    console.log("----------------------------------------------");
+    // console.log("----------------------------------------------");
+    // console.log("ℹ️props-> 🐷 Покемон-ім'я:", pokemonName);
+    // console.log("ℹ️{🐷} Покемон-об'єкт:", pokemon);
+    // console.log("ℹ️❌ Помилка:", error);
+    // console.log("ℹ️❓ Статус:", status);
+    // console.log("----------------------------------------------");
 
     //? idle - запиту ще немає, нічого не відбувається
     if (status === 'idle') {

@@ -51,9 +51,9 @@ export class PokemonForm extends Component {
             pokemonName,
         } = this.state;
 
-        console.log("----------------------------------------------");
-        console.log("🔖🐷 Ім'я покемона:", pokemonName);
-        console.log("______________________________________________");
+        // console.log("----------------------------------------------");
+        // console.log("🔖🐷 Ім'я покемона:", pokemonName);
+        // console.log("______________________________________________");
 
         return (
             <form

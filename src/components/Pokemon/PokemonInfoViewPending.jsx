@@ -82,7 +82,7 @@ export function PokemonInfoViewPending({ pokemonName }) {
           aria-label="Завантаження покемона"
         /> */}
         {/* //! Loader: бібліотека react-loader-spinner */}
-        <Oval
+        {/* <Oval
           height={36}
           width={36}
           color="#10ff0c"
@@ -91,7 +91,7 @@ export function PokemonInfoViewPending({ pokemonName }) {
           secondaryColor="#fc1f1f"
           strokeWidth={9}
           strokeWidthSecondary={5}
-        />
+        /> */}
         <ThreeDots
           height="36"
           width="80"

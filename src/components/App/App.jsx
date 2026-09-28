@@ -31,9 +31,9 @@ export class App extends Component {
         pokemonName, //! 🐷 Ім'я покемона
       } = this.state;
   
-      console.log("----------------------------------------------");
-      console.log("✅🐷 Ім'я покемона:", pokemonName);
-      console.log("----------------------------------------------");
+      // console.log("----------------------------------------------");
+      // console.log("✅🐷 Ім'я покемона:", pokemonName);
+      // console.log("----------------------------------------------");
     
       return (
         <div className={css.mainContainer} >
