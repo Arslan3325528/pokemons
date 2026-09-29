@@ -3,13 +3,14 @@ import css from "./PokemonInfoViewData.module.css";
 
 export function PokemonInfoViewData({
   pokemon: {
+    id,
     name,
     sprites,
     // stats
   } }) {
   return (
     <div className={css.pokemonContainer}>
-      <p className={css.pokemonName}><u><i>Покемон</i></u>: <b>{name}</b></p>
+      <p className={css.pokemonName}><u><i>Покемон</i></u>: <b>{name}</b> <i>{ id != null ? `(${id})` : null}</i></p>
       <img className={css.pokemonImage}
         src={sprites.other.home?.front_default} //todo: var.2
         // src={sprites.other['official-artwork'].front_default} //todo: var.3
