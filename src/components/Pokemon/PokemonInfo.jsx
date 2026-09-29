@@ -9,7 +9,7 @@ import  pokemonAPI from '@/services/pokemon-api.js';
 // import css from "./PokemonInfo.module.css";
 
 
-export class PokemonInfoAndErrorsStateMachine extends Component {
+export class PokemonInfo extends Component {
   state = {
     pokemon: null, //! об'єкт з даними про покемона
     error: null, //! обробка помилок

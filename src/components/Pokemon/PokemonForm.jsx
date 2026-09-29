@@ -65,6 +65,7 @@ export class PokemonForm extends Component {
                     type="text"
                     name="pokemonName"
                     value={pokemonName}
+                    placeholder="введіть: croconaw або: 159"
                     onChange={this.handleChange}
                 />
                 <button

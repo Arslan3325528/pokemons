@@ -4,7 +4,7 @@
 import React, { Component } from "react";
 
 import { PokemonForm } from '@/components/Pokemon/PokemonForm.jsx'; 
-import { PokemonInfoAndErrorsStateMachine } from '@/components/Pokemon/PokemonInfoAndErrorsStateMachine.jsx'; 
+import { PokemonInfo } from '@/components/Pokemon/PokemonInfo.jsx'; 
 
 import { ToastContainer } from 'react-toastify'; //! 01.Підлючення бібліотеки react-toastify
 // https://www.npmjs.com/package/react-toasti
@@ -41,7 +41,7 @@ export class App extends Component {
           <PokemonForm onSubmit={this.submitForm} />
 
           {/* //! HTTP-запит + Розмітка + Обробка помилок + State Machine + Рефакторинг + React-skeleton (чистий код) */}
-          <PokemonInfoAndErrorsStateMachine pokemonName={pokemonName} />
+          <PokemonInfo pokemonName={pokemonName} />
           
           {/* //! 01.Підлючення бібліотеки react-toastify */}
           <ToastContainer autoClose={2000} /> 
