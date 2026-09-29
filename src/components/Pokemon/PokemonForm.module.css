@@ -12,16 +12,28 @@
 .pokemonFormInput {
     max-width: 70%;
     height: 30px;
+    font-size: larger;
+    font-weight: 700;
+    color: #002105;
     border: 2px double #008000;
     border-radius: 4px;
-    font-size: larger;
+    background-color: #abffba15;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
 }
 
 .pokemonFormInput::placeholder {
     font-size: smaller;
+    font-weight: initial;
     color: #a9a9a9;
     font-style: italic;
     text-shadow: 2px 2px 2px #59595959;
+}
+
+.pokemonFormInput:focus {
+    border: 2px solid #095000;
+    outline: none;
+    /* box-shadow: 0 0 0 4px rgba(0, 150, 136, .18); */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 }
 
 .pokemonButton {
@@ -40,8 +52,8 @@
 }
 
 .pokemonButton:hover {
-    background-color: #e5ffff;
     color: #009f9f;
+    background-color: #e5ffff;
     box-shadow: inset 0 0 8px 4px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.9);
     text-shadow: none;
 }

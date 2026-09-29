@@ -13,10 +13,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
-  /* background-color: #c5ffc369; */
-  /* background-color: #25252525; */
-  background-color: #feffce25;
-  background-color: #abffba25;
+  /* background-color: #abffba25; */
+  background-color: #feffb951;
   scroll-behavior: smooth;
 }
 
